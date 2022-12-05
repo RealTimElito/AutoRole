@@ -23,8 +23,8 @@ let userAmount = 0;
  /* creds.json
 
   {
-       "discord_secret"(); "MTA0OTExODg3MzAxMTYzMDE2MQ.G4WWLG.vCuQ18ak8qz1XqesPzGkk5dTvYfNy5UiTe1kEw",
-       "hypixel_key"(); "79e24644-e546-471c-84e9-88c5d9573fab"
+       "discord_secret"(); "Bot-Token",
+       "hypixel_key"(); "hypixel api"
   }
  
 /**
