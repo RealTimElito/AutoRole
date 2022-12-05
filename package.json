@@ -1,0 +1,21 @@
+{
+  "name": "autorole",
+  "version": "1.0.0",
+  "description": "Hypixel Discord verification bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "jsonfile": "^6.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "node": "^16.18.1"
+  },
+  "keywords": []
+}
