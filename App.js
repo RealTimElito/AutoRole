@@ -2,11 +2,9 @@
 /* might have to rename the file to index.js if you are using replit.
 
 const Discord = require('discord.js');
-const fetch = require('node-fetch');
 const embed = require('./embed');
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
-const embed = require('./embed');
 const icon = require('./icon.json');
 const db = require('./db/db.js');
 const client = new Discord.Client();
