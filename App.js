@@ -4,29 +4,33 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const embed = require('./embed');
+const Discord = require('discord.js');
+const fetch = require('node-fetch');
+const embed = require('./embed');
 const icon = require('./icon.json');
 const db = require('./db/db.js');
-
 const client = new Discord.Client();
-
+const creds = require('./creds.json');
+const prefix = `ar!`;
 
 let userAmount = 0;
 
-/**
- * creds.json
- * 
- * Should be formatted as the following:
- * {
- *      "discord_secret": "<bot token>",
- *      "hypixel_key": "</api new>"
- * }
- */
-/* const creds = require('./creds.json');
 
+ 
+
+
+
+ /* creds.json
+
+  {
+       "discord_secret"(); "MTA0OTExODg3MzAxMTYzMDE2MQ.G4WWLG.vCuQ18ak8qz1XqesPzGkk5dTvYfNy5UiTe1kEw",
+       "hypixel_key"(); "79e24644-e546-471c-84e9-88c5d9573fab"
+  }
+ 
 /**
  * Prefix that the bot looks for
  */
-const prefix = `ar!`;
+
 
 
 /**
@@ -121,7 +125,7 @@ function massGuildDM() {
                 'PURPLE',
                 'The bot now supports... Hypixel ranks!\nE.g. VIP, VIP+, MVP, MVP+, MVP++.\nYou must re-verify in order to recieve these new ranks.', [],
                 icon.celeb,
-                'DM Tim Elito#0001 for support | Thanks for choosing AutoRole'
+                'DM foobball#7416 for support | Thanks for choosing HyVerify'
             ));*/
         } else {
             log(`Already sent message to ${guild.ownerID}`);
@@ -389,7 +393,7 @@ client.on('message', msg => {
                     "title": "`Other`",
                     "desc": `**${prefix}help**: Displays this message.\n` +
                         `**${prefix}invite**: Gives you the link to invite the bot to your own server.\n` +
-                        `**${prefix}donate**: Gives you a link to where you can donate.`,
+                        `**${prefix}donate**: Gives you the ways in which you can donate.`,
                     "stack": false
                 }],
                 icon.thinking
@@ -408,20 +412,20 @@ client.on('message', msg => {
         console.log(`New suggestion from ${msg.author.tag}: ${suggestion}`);
         console.log(`New suggestion from ${msg.author.tag}: ${suggestion}`);
     } else if (msg.content == `${prefix}donate`) {
-        msg.channel.send(`Pls send me money.`);
+        msg.channel.send(`Buy Lunar cosmetics in 'Tim_Elito's name.`);
     } else if (msg.content == `${prefix}settings`) {
-        /*if (msg.guild !== null && msg.guild !== undefined) {
+        if (msg.guild !== null && msg.guild !== undefined) {
             if (msg.member.guild.me.hasPermission('ADMINISTRATOR')) {
                 msg.channel.send(`**Current Server Settings:**\n` +
                     `${icon.check} \`MsgNewUsers\` - Messages new users on join.\n` +
                     `${icon.check} \`GiveRankRoles\` - Gives users their Hypixel rank role.\n\n` +
-                    `**Change settings:**\nYou cannot currently change settings.`);
+                    `**Change settings:**\nYou canno currently change settings.`);
             } else {
                 msg.channel.send(`${icon.x} You must have the \`ADMINISTRATOR\` permission to view and change settings.`);
             }
         } else {
             msg.channel.send(`${icon.x} This command cannot be used in DMs.`);
-        }*/
+        }
     }
 });
 
