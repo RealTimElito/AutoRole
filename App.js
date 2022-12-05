@@ -121,7 +121,7 @@ function massGuildDM() {
                 'PURPLE',
                 'The bot now supports... Hypixel ranks!\nE.g. VIP, VIP+, MVP, MVP+, MVP++.\nYou must re-verify in order to recieve these new ranks.', [],
                 icon.celeb,
-                'DM foobball#7416 for support | Thanks for choosing HyVerify'
+                'DM Tim Elito#0001 for support | Thanks for choosing AutoRole'
             ));*/
         } else {
             log(`Already sent message to ${guild.ownerID}`);
